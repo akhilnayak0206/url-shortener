@@ -1,22 +1,40 @@
+@import "~antd/dist/antd.css";
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height:100%;
+  padding:20px;
+  display: flex !important;
+  display: -webkit-flex !important;
+  background-image: linear-gradient(to right, #ABF2E1, #88F5DB, #4AF2CA, #0BDAA9);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #09d3ac;
+.Display-Center{
+  display: flex !important;
+  display: -webkit-flex !important; 
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card-Center{
+  margin: 20px;
+  background-color: rgb(218, 218, 218);
+  width: 100%;
+}
+
+.ant-card-body{
+  display: flex!important;
+  flex-direction: column;
+}
+
+.Input-Center{
+}
+
+.Button-Center{
+  align-self: center;
+  margin: 20px;
+  margin-bottom: 0px;
+  background-color: rgb(218, 218, 218);
 }
