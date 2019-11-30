@@ -27,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 style={{flex:'10%'}}>URL SHORTENER</h1>
+        <h1 style={{flex:'10%', fontFamily: "Snell Roundhand, cursive"}}>URL SHORTENER</h1>
       <div className="Display-Center" style={{flex:'90%'}} >
       {!this.state.showUrl ? (
           <div className="Card-Center">

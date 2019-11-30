@@ -34,9 +34,21 @@
 .Input-Center{
 }
 
+.ant-btn-primary:hover {
+  background-color:rgba(0, 150, 167, 0.438);
+}
+
+.ant-btn-primary {
+  background-color: #0097A7;
+}
+
+.ant-input {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.061);
+}
+
 .Button-Center{
   align-self: center;
   margin: 20px;
   margin-bottom: 0px;
-  background-color: rgb(218, 218, 218);
+  /* background-color: #0097A7; */
 }
