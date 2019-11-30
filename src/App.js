@@ -8,27 +8,39 @@ class App extends Component {
     this.state = {
       disabledInput: false,
       urlText: "",
-      showUrl: true,
+      showUrl: false,
     };
   }
-  onPress;
+
+  onClickGet = () =>{
+    this.setState({
+      showUrl:true
+    })
+  }
+
+  onReturnGet = () =>{
+    this.setState({
+      showUrl:false
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <h1 style={{flex:'10%'}}>URL SHORTENER</h1>
       <div className="Display-Center" style={{flex:'90%'}} >
       {!this.state.showUrl ? (
-          <Card className="Card-Center" hoverable>
+          <div className="Card-Center">
             <Input
               className="Input-Center"
               placeholder="Enter URL"
               onChange={urlText => this.setState({ urlText })}
               disabled={this.state.disabledInput}
             />
-            <Button className="Button-Center" type="primary">
+            <Button className="Button-Center" type="primary" onClick={()=>this.onClickGet()} >
               Click For Magic!
             </Button>
-          </Card>
+          </div>
         ) : null}
         {this.state.showUrl ? (
           <Card className="Card-Center" hoverable>
@@ -39,7 +51,7 @@ class App extends Component {
             disabled
             addonAfter={<Icon type="copy" />}
           />
-          <Button className="Button-Center" type="primary">
+          <Button className="Button-Center" type="primary" onClick={()=>this.onReturnGet()} >
               Click To Do Magic Again!
             </Button>
         </Card>
