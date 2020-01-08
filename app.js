@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const mongoURI = 'mongodb://localhost:27017/url-shortner';
 const connectOptions = {
@@ -21,7 +20,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(bodyParser.json());
+app.use(express.json());
 const PORT = 7000;
 
 app.use(require('./routes/urlshorten'));
