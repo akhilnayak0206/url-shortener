@@ -76,7 +76,7 @@ npm run build
 
 #### License
 
-> This project is licensed under the MIT License.
+> This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License.
 
 #### If you have any suggestion or doubt do let me know
 
