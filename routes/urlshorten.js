@@ -24,7 +24,7 @@ router.post('/api/item', async (req, res) => {
   const { originalUrl } = req.body;
   const shortBaseUrl = 'http://localhost:7000';
   const urlCode = shortid.generate();
-  const updatedAt = new Date();
+  const createdAt = new Date();
   if (validUrl.isUri(originalUrl)) {
     try {
       const item = await UrlShorten.findOne({ originalUrl });
@@ -36,7 +36,7 @@ router.post('/api/item', async (req, res) => {
           originalUrl,
           shortUrl,
           urlCode,
-          updatedAt
+          createdAt
         });
         await item.save();
         res.header('Access-Control-Allow-Origin', '*');
