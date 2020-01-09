@@ -46,7 +46,7 @@ npm run build
 - react-copy-to-clipboard
 - antd
 
-**React** is a JavaScript library for building user interfaces..  
+**React** is a JavaScript library for building user interfaces.  
 **react-copy-to-clipboard** is used to copy the text to the clipboard.  
 **antd** is AntDesign which is popularly used as User Interface.
 
